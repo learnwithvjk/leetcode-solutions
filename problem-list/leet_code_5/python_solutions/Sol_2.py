@@ -66,5 +66,5 @@ def getPalinDromeString(s, cache):
         return s2
 
 
-def getExecutable():
-    return Solution().longestPalindrome
+def getExecutable(*args):
+    return Solution().longestPalindrome(*args)

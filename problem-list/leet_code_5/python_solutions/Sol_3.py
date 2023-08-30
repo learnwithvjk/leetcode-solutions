@@ -51,5 +51,5 @@ def getMaxPossiblePalindrome(s, index):
     return str1 if len(str1) > len(str2) else str2
 
 
-def getExecutable():
-    return Solution().longestPalindrome
+def getExecutable(*args):
+    return Solution().longestPalindrome(*args)

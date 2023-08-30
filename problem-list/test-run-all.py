@@ -41,7 +41,7 @@ def getRunMethod(solution, service, problem):
     selectedSolutionModulePath = serviceName + '.' + SOLUTION_DIR + \
         '.' + SOLUTION_FILE_NAME + str(solution)
     module = importlib.import_module(selectedSolutionModulePath)
-    return module.getExecutable()
+    return module.getExecutable
 
 
 def getTestCases(service, problem):

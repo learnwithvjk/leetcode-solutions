@@ -21,5 +21,5 @@ class Solution(object):
         return len(stack) == 0
 
 
-def getExecutable():
-    return Solution().isValid
+def getExecutable(*args):
+    return Solution().isValid(*args)

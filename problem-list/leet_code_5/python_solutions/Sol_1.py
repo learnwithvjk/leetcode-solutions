@@ -27,5 +27,5 @@ class Solution(object):
         return maxString
 
 
-def getExecutable():
-    return Solution().longestPalindrome
+def getExecutable(*args):
+    return Solution().longestPalindrome(*args)
