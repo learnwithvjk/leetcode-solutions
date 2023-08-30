@@ -64,3 +64,7 @@ def getPalinDromeString(s, cache):
     else:
         cache[s] = s2
         return s2
+
+
+def getExecutable():
+    return Solution().longestPalindrome
