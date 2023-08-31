@@ -56,7 +56,8 @@ def exec(runMethod, testCases):
     start_time = time.time()
     for index in range(len(testCases)):
         print("%s%s" % ('test-case-', index))
-        print(runMethod(testCases[index]))
+        params = testCases[index]
+        print(runMethod(*params))
 
     end_time = time.time()
     elapsed_time = end_time - start_time
