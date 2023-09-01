@@ -19,8 +19,6 @@ class Solution(object):
             except:
                 tempDict[counter[key]] = [key]
 
-        # if only one char with single freq then it can be removed
-        # if only one
         if len(tempDict) == 1:
             try:
                 if len(tempDict[tempKey]) == 1 or tempKey == 1:
@@ -35,10 +33,7 @@ class Solution(object):
                 minCount = min(minCount, key)
                 maxCount = max(maxCount, key)
 
-            if minCount == 1 and len(tempDict[minCount]) == 1:
-                return True
-
-            if maxCount - minCount == 1 and len(tempDict[maxCount]) == 1:
+            if minCount == 1 and len(tempDict[minCount]) == 1 or (maxCount - minCount == 1 and len(tempDict[maxCount]) == 1):
                 return True
 
         return False
